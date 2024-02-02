@@ -1,0 +1,39 @@
+.ContactPage h1{
+    font-size: 56px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+
+
+.ContactPage h3{
+    background-color: #FFFFFF;
+    color: #F16529;
+    font-family: 'Hammersmith One', sans-serif;
+    display: inline;
+    font-size: 18px;
+    padding: 2px 1.5rem;
+}
+
+.ContactPage p{
+    font-size: 1rem;
+}
+.ContactPage h5{
+    font-size: 30px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.Dash{
+    font-size: 2rem;
+    font-weight: 10rem;
+}
+
+@media screen and (min-width: 890px) {
+    .ContactPage{
+        margin: 0 2rem 0 6rem;
+    }
+
+    div .div{
+        width: 40rem;
+        
+    }
+}

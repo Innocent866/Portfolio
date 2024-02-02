@@ -1,0 +1,30 @@
+.Landing-Page h5{
+    background-color: #FFFFFF;
+    color: #F16529;
+    font-family: 'Hammersmith One', sans-serif;
+    display: inline;
+    padding: 2px 1.5rem;
+}
+
+.Landing-Page h1{
+    font-size: 65px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.Landing-Page p{
+    font-size: 18px;
+    
+}
+
+.Landing-Page-img{
+    width: 650px;
+}
+
+.reactlogo{
+    animation: act infinite 15s linear;
+}
+
+@keyframes act {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
+}
