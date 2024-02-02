@@ -11,17 +11,12 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.Landing-Page p{
-    font-size: 18px;
-    
-}
-
 .Landing-Page-img{
     width: 650px;
 }
 
 .reactlogo{
-    animation: act infinite 15s linear;
+    animation: act infinite 5s linear;
 }
 
 @keyframes act {

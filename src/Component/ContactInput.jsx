@@ -48,8 +48,8 @@ const ContactInput = () => {
         <input
           type="text"
           placeholder="From"
-          style={{ background: "#404040" }}
-          className="w-100 my-3"
+          style={{ background: "#404040", color:"white"}}
+          className="w-100 my-4 p-2"
           value={from}
           onChange={(e)=>setFrom(e.target.value)}
         />
@@ -57,15 +57,15 @@ const ContactInput = () => {
         <input
           type="text"
           placeholder="Subject"
-          style={{ background: "#404040" }}
-          className="w-100 my-3"
+          style={{ background: "#404040", color:"white" }}
+          className="w-100 my-4 p-2"
           value={subject}
           onChange={(e)=>setSubject(e.target.value)}
         />
 
         <textarea
-          className="w-100 my-3"
-          style={{ background: "#404040", height: "20rem" }}
+          className="w-100 my-4 p-2"
+          style={{ background: "#404040", height: "20rem", color:"white" }}
           value={writeMessage}
           onChange={(e)=>setWriteMessage(e.target.value)}
         >

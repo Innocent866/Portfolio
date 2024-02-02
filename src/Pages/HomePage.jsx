@@ -19,12 +19,12 @@ const HomePage = () => {
     <>
       <div className="text-white bg-dark">
         <Navbar />
-        <div className="container d-lg-flex justify-content-between  align-items-center">
-        <img src={img} alt="" className="mw-100 d-block d-lg-none mb-5" />
-          <div className="Landing-Page w-100">
+        <div className="container">
+        <div className="d-lg-flex justify-content-between  align-items-center">
+          <div className="Landing-Page">
             <h5>Full Stack Developer</h5>
-            <h1 className="mt-5">Adriana McTominay</h1>
-            <p className="lh-lg">
+            <h1 className="mt-5 mt-lg-3">Innocent Goldima</h1>
+            <p className="lh-base" style={{fontSize:"18px"}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pha
               tortor consequat nibh gravida id sit. Quis eget diam ut proin. At
               nisl diam urna sit. Tortor nibh ornare vestibulum amet dis eros
@@ -39,25 +39,26 @@ const HomePage = () => {
               <img src={html3} alt="" />
             </div>
 
-            <div className="d-lg-flex d-none align-items-center justify-content-between" >
-              <img src={profile} alt="" />
-              <Link className="text-white text-decoration-none border border-1  d-flex align-items-center gap-4">
-                <img src={mail} alt="" />
-                <h4 className="d-none d-lg-block">Email Me</h4>
-                <img src={sending} alt="" />
-              </Link>
-              <Link to="/Contact" target="blank" className="text-white text-decoration-none border  d-flex align-items-center gap-4">
-                <img src={gitup} alt="" />
-                <h4 className="d-none d-lg-block">Gitup</h4>
-                <img src={sending} alt="" />
-              </Link>
-            </div>
           </div>
           
            
-            <img src={img} alt="" className="Landing-Page-img d-none d-lg-block"/>
+            <img src={img} alt="" className="img-fluid Landing-Page-img"/>
           
         </div>
+        <div className="d-flex align-items-center gap-lg-5 gap-4" >
+              <img src={profile} alt="" />
+              <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
+                <img src={mail} alt="" />
+                Email Me
+                <img src={sending} alt="" />
+              </Link>
+              <Link  target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
+                <img src={gitup} alt="" />
+                Github
+                <img src={sending} alt="" />
+              </Link>
+            </div>
+            </div>
       </div>
     </>
   );

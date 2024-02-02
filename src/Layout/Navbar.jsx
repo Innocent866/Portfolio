@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="p-3 container my-3">
       <nav className="d-flex justify-content-between align-items-center">
-        <h3>Adriana.</h3>
+      <h3>INNOCENT.</h3>
         <ul className="d-none d-lg-flex justify-content-between gap-5 align-items-center list-unstyled ">
           <Link className="text-decoration-none text-white" to="/project">
             <li>Project</li>

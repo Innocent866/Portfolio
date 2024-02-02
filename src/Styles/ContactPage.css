@@ -14,18 +14,13 @@
     padding: 2px 1.5rem;
 }
 
-.ContactPage p{
-    font-size: 1rem;
-}
+
 .ContactPage h5{
     font-size: 30px;
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.Dash{
-    font-size: 2rem;
-    font-weight: 10rem;
-}
+
 
 @media screen and (min-width: 890px) {
     .ContactPage{
