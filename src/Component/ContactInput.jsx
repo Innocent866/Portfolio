@@ -24,9 +24,16 @@ const ContactInput = () => {
      if (data.data.success === true) {
       toast.success(data.data.message)
      }
+
+     if (data.response.data.success === false) {
+      toast.error(data.response.data.message)
+     }
       console.log(data);
     } catch (error) {
       console.log(error);
+      if (error.response.data.success === false) {
+        toast.error(error.response.data.message)
+       }
       
     }
   }
