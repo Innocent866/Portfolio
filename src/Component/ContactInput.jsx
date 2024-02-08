@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Contactnput.css";
 import axios from 'axios'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 const ContactInput = () => {
@@ -21,9 +21,9 @@ const ContactInput = () => {
         subject,
         writeMessage
       })
-    //  if (respond.success === true) {
-    //   toast.success(respond.message)
-    //  }
+     if (data.data.success === true) {
+      toast.success(data.data.message)
+     }
       console.log(data);
     } catch (error) {
       console.log(error);
