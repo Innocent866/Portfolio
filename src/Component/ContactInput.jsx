@@ -16,7 +16,7 @@ const ContactInput = () => {
 
     
     try {
-      const data = await axios.post('http://localhost:3000/api/create',{
+      const data = await axios.post('https://portfolio-2slt.onrender.com/api/create',{
         from,
         subject,
         writeMessage
