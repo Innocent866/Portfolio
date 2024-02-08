@@ -17,7 +17,7 @@ import Navbar from "../Layout/Navbar";
 const HomePage = () => {
   return (
     <>
-      <div className="text-white bg-dark">
+      <div className="text-white">
         <Navbar />
         <div className="container">
         <div className="d-lg-flex justify-content-between  align-items-center">
@@ -48,14 +48,18 @@ const HomePage = () => {
         <div className="d-flex align-items-center gap-lg-5 gap-4" >
               <img src={profile} alt="" />
               <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
+                <div className="email  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={mail} alt="" />
                 Email Me
                 <img src={sending} alt="" />
+                </div>
               </Link>
-              <Link  target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
+              <Link  target="blank" className="text-white text-decoration-none">
+                <div className="git  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={gitup} alt="" />
                 Github
                 <img src={sending} alt="" />
+                </div>
               </Link>
             </div>
             </div>

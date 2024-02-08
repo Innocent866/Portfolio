@@ -12,7 +12,7 @@ import Download from "../Component/Download";
 const ProjectPage = () => {
   return (
     <div>
-      <div className="justify-content-between d-lg-flex bg-dark text-white ">
+      <div className="justify-content-between d-lg-flex text-white ">
         <div className="container mb-5">
           <div className="ProjectPage">
             <Link to="/" className="text-decoration-none text-white">
@@ -28,38 +28,39 @@ const ProjectPage = () => {
             </p>
 
             <div className="my-5 pb-3">
-              <Link to="/project" className="text-decoration-none text-white">
-                <p className="d-flex gap-3">
+              <Link to="/project" className="d-flex gap-3 text-decoration-none text-white">
                   01{" "}
                   <img
                     src={Dash}
                     alt=""
+                    className="dash"
                     style={{ fontSize: "2rem", fontWeight: "10px" }}
                   />{" "}
-                  Projects
-                </p>
+                 <p className="li "> Projects</p>
+                
               </Link>
-              <Link to="" className="text-decoration-none text-white">
-                <p className="d-flex gap-3">
+              <Link to="" className="d-flex gap-3 text-decoration-none text-white">
+                
                   02{" "}
                   <img
                     src={Dash}
                     alt=""
+                    className="dash"
                     style={{ fontSize: "2rem", fontWeight: "10px" }}
                   />{" "}
                   <Download />{" "}
-                </p>
+                
               </Link>
-              <Link to="/contact" className="text-decoration-none text-white">
-                <p className="d-flex gap-3">
+              <Link to="/contact" className="d-flex gap-3 text-decoration-none text-white">
+                
                   03{" "}
                   <img
                     src={Dash}
                     alt=""
+                    className="dash"
                     style={{ fontSize: "2rem", fontWeight: "10px" }}
                   />{" "}
-                  Contacts
-                </p>
+                 <p className="li "> Contacts</p>
               </Link>
             </div>
 
@@ -69,17 +70,21 @@ const ProjectPage = () => {
                 target="blank"
                 className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3"
               >
+                <div className="email  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={mail} alt="" />
                 Email Me
                 <img src={sending} alt="" />
+                </div>
               </Link>
               <Link
                 target="blank"
                 className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3"
               >
+               <div className="git  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={gitup} alt="" />
                 Github
                 <img src={sending} alt="" />
+                </div>
               </Link>
             </div>
           </div>

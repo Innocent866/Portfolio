@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../Styles/ContactPage.css";
+import "../Styles/Contactnput.css";
+import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast';
 
 
@@ -11,26 +12,19 @@ const ContactInput = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault()
 
-    const messageBody = {
-      from,
-      subject,
-      writeMessage
-    }
+    // const messageBody = 
 
     
     try {
-      const data = await fetch('http://localhost:3000/api/create',{
-        method: 'POST',
-        header:{
-          "Content-type":"application/json"
-        },
-        body: JSON.stringify(messageBody)
+      const data = await axios.post('http://localhost:3000/api/create',{
+        from,
+        subject,
+        writeMessage
       })
-      const respond = await data.json()
     //  if (respond.success === true) {
     //   toast.success(respond.message)
     //  }
-      console.log(respond);
+      console.log(data);
     } catch (error) {
       console.log(error);
       

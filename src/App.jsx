@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage'
 import ProjectPage from './Pages/ProjectPage'
 import ContactPage from './Pages/ContactPage'
 import { Toaster } from 'react-hot-toast';
+import './App.css'
 
 const App = () => {
   return (

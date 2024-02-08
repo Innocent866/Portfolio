@@ -27,10 +27,10 @@ const Navbar = () => {
             <li>Project</li>
           </Link>
           <Download/>
-          {/* <Link className="text-decoration-none text-white" to="/contact">
+          <Link className="text-decoration-none text-white" to="/contact">
             <li>Contact</li>
-          </Link> */}
-          <MessageSentModal/>
+          </Link>
+          {/* <MessageSentModal/> */}
         </ul>
         <div className="d-block d-lg-none" onClick={close}>
         <BiListUl/>

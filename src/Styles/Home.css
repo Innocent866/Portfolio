@@ -13,13 +13,37 @@
 
 .Landing-Page-img{
     width: 650px;
+    animation: image 4s;
 }
 
 .reactlogo{
     animation: act infinite 5s linear;
 }
 
+.git{
+    transition: 1s;
+}
+
+.git:hover{
+    padding: 0 0 2rem 0;
+}
+
+.email{
+    transition: 1s;
+}
+
+.email:hover{
+    padding: 0 0 2rem 0;
+}
+
 @keyframes act {
     0% {transform: rotateZ(0deg);}
     100% {transform: rotateZ(360deg);}
 }
+
+
+@keyframes image {
+    0%{opacity: 0; transform: translatex(200px) ;}
+    100%{transform: translatex(0px)}
+}
+
