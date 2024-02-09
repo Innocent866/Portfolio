@@ -70,7 +70,7 @@ const ContactPage = () => {
             </div>
 
 
-            <div className="d-flex align-items-center gap-lg-5 gap-4" >
+            <div className="d-flex align-items-center gap-lg-5 justify-content-between justify-content-lg-start" >
               <img src={profile} alt="" />
               <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
               <div className="email  d-flex align-items-center gap-1 gap-lg-3">

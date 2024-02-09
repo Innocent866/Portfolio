@@ -23,14 +23,14 @@ const HomePage = () => {
         <div className="d-lg-flex justify-content-between  align-items-center">
           <div className="Landing-Page">
             <h5>Full Stack Developer</h5>
-            <h1 className="mt-5 mt-lg-3">Innocent Goldima</h1>
+            <h1 className="mt-5 mt-lg-3" style={{fontFamily:'Hammersmith One'}}>Innocent Goldima</h1>
             <p className="lh-base" style={{fontSize:"18px"}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pha
               tortor consequat nibh gravida id sit. Quis eget diam ut proin. At
               nisl diam urna sit. Tortor nibh ornare vestibulum amet dis eros
               dolor eget. Orci in enim sit luctus lacus arcu.
             </p>
-            <div className="d-flex gap-lg-5 gap-3">
+            <div className="d-flex gap-5">
               <img src={bootstrap} alt="" />
               <img src={js} alt="" />
               <img src={html5} alt="" />
@@ -45,7 +45,7 @@ const HomePage = () => {
             <img src={img} alt="" className="img-fluid Landing-Page-img"/>
           
         </div>
-        <div className="d-flex align-items-center gap-lg-5 gap-4" >
+        <div className="d-flex align-items-center gap-lg-5 justify-content-between justify-content-lg-start" >
               <img src={profile} alt="" />
               <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
                 <div className="email  d-flex align-items-center gap-1 gap-lg-3">
