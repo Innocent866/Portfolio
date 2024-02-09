@@ -25,19 +25,27 @@ const HomePage = () => {
             <h5>Full Stack Developer</h5>
             <h1 className="mt-5 mt-lg-3" style={{fontFamily:'Hammersmith One'}}>Innocent Goldima</h1>
             <p className="lh-base" style={{fontSize:"18px"}}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pha
-              tortor consequat nibh gravida id sit. Quis eget diam ut proin. At
-              nisl diam urna sit. Tortor nibh ornare vestibulum amet dis eros
-              dolor eget. Orci in enim sit luctus lacus arcu.
+             <strong>About:</strong> My name is INNOCENT GOLDIMA DAKUP am from NIGERIA, PLATEAU STATE, I am a WEBSITE DEVELOPER FULLSTACK but Specialized on FRONTEND DEVELOPER
             </p>
-            <div className="d-flex gap-5">
-              <img src={bootstrap} alt="" />
-              <img src={js} alt="" />
-              <img src={html5} alt="" />
-              <img src={javascript} alt="" />
-              <img src={react} alt="" className="reactlogo"/>
-              <img src={html3} alt="" />
+           <div className="d-lg-flex gap-5">
+           <div>
+             <p  className="text-decoration-underline fs-5"> List of Programming tool I use:</p>
+              <ol>
+                <li>HTML <img className="img1" src={html5} alt="" /></li>
+                <li>CSS <img className="img2" src={html3} alt="" /></li>
+                <li>Javascript <img className="img3" src={javascript} alt="" /></li>
+                
+              </ol>
             </div>
+            <div>
+             <p className="text-decoration-underline fs-5"> List of Framework tool I use:</p>
+              <ol>
+                <li>Bootstrap <img className="img4" src={bootstrap} alt="" /></li>
+                <li>React <img src={react} alt="" className="reactlogo"/></li>
+              </ol>
+            </div>
+           </div>
+          
 
           </div>
           

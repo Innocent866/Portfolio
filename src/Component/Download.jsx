@@ -14,7 +14,7 @@ const Download = () => {
   return (
     <>
     <ul className="list-unstyled" onClick={handleShow}>
-        <li style={{cursor:"pointer"}}>Download Resume</li>
+        <li className="li" style={{cursor:"pointer"}}>Download Resume</li>
     </ul>
       
 

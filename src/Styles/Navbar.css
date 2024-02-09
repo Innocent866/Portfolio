@@ -3,14 +3,14 @@
     border: 1px solid white;
 }
 
-li{
+.li{
     background-color: white;
     color: black;
     padding: 3px 10px;
     border-radius: 1rem 0;
 }
 
-li:hover{
+.li:hover{
     border-radius: 0 1rem;
 }
 

@@ -24,11 +24,11 @@ const Navbar = () => {
       <h3>INNOCENT.</h3>
         <ul className="d-none d-lg-flex justify-content-between gap-5 align-items-center list-unstyled ">
           <Link className="text-decoration-none text-white" to="/project">
-            <li>Project</li>
+            <li className="li">Project</li>
           </Link>
           <Download/>
           <Link className="text-decoration-none text-white" to="/contact">
-            <li>Contact</li>
+            <li className="li">Contact</li>
           </Link>
           {/* <MessageSentModal/> */}
         </ul>

@@ -17,7 +17,7 @@
 }
 
 .reactlogo{
-    animation: act infinite 5s linear;
+    animation: react infinite 5s linear;
 }
 
 .git{
@@ -36,7 +36,37 @@
     padding: 0 0 2rem 0;
 }
 
-@keyframes act {
+ol .img1{
+    animation: images1 3s infinite linear alternate;
+}
+ol .img2{
+    animation: image2 4s 2s infinite linear alternate;
+}
+ol .img3{
+    animation: imag3 3s 1s infinite linear alternate;
+}
+ol .img4{
+    animation: ima4 3s 3s infinite linear alternate;
+}
+
+@keyframes images1 {
+    0% {transform: translatex(0px) ;}
+    100% {transform: translatex(160px);}
+}
+@keyframes image2 {
+    0% {transform: translatex(0px) ;}
+    100% {transform: translatex(180px);}
+}
+@keyframes imag3 {
+    0% {transform: translatex(0px) ;}
+    100% {transform: translatex(125px);}
+}
+@keyframes ima4 {
+    0% {transform: translatex(0px) ;}
+    100% {transform: translatex(90px);}
+}
+
+@keyframes react {
     0% {transform: rotateZ(0deg);}
     100% {transform: rotateZ(360deg);}
 }
