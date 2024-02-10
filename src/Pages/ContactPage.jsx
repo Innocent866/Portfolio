@@ -2,7 +2,7 @@ import React from 'react'
 import '../Styles/ContactPage.css'
 import { Link } from "react-router-dom";
 import Dash from '../assets/Dash.svg'
-import profile from "../assets/profile.svg";
+import profile from "../assets/WhatsApp Image 2024-02-09 at 5.32.25 AM.jpeg";
 import gitup from "../assets/gituplogo.svg";
 import sending from "../assets/Sendinglogo.svg";
 import ProjectStore from "../Component/ProjectStore.jsx"
@@ -71,7 +71,7 @@ const ContactPage = () => {
 
 
             <div className="d-flex align-items-center gap-lg-5 justify-content-between justify-content-lg-start" >
-              <img src={profile} alt="" />
+            <img src={profile} alt="" className="w-25 img-fluid rounded-5" style={{maxWidth:"4rem", height:"4rem"}}/>
               <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
               <div className="email  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={mail} alt="" />

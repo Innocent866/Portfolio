@@ -4,10 +4,9 @@ import img from "../assets/Group 2.svg";
 import bootstrap from "../assets/Bootstraplogo.svg";
 import html5 from "../assets/html5.svg";
 import html3 from "../assets/html3.svg";
-import js from "../assets/js.svg";
 import javascript from "../assets/logos_javascript.svg";
 import react from "../assets/React.svg";
-import profile from "../assets/profile.svg";
+import profile from "../assets/WhatsApp Image 2024-02-09 at 5.32.25 AM.jpeg";
 import gitup from "../assets/gituplogo.svg";
 import mail from "../assets/email-logo.svg";
 import sending from "../assets/Sendinglogo.svg";
@@ -25,7 +24,7 @@ const HomePage = () => {
             <h5>Full Stack Developer</h5>
             <h1 className="mt-5 mt-lg-3" style={{fontFamily:'Hammersmith One'}}>Innocent Goldima</h1>
             <p className="lh-base" style={{fontSize:"18px"}}>
-             <strong>About:</strong> My name is INNOCENT GOLDIMA DAKUP am from NIGERIA, PLATEAU STATE, I am a WEBSITE DEVELOPER FULLSTACK but Specialized on FRONTEND DEVELOPER
+             <strong className="fs-1">About :</strong> My name is INNOCENT GOLDIMA DAKUP am from NIGERIA, PLATEAU STATE, I am a WEBSITE DEVELOPER FULLSTACK but Specialized on FRONTEND DEVELOPER. You can preview my passed project by clicking on the project button and contact me by also clicking on the Contact button
             </p>
            <div className="d-lg-flex gap-5">
            <div>
@@ -54,7 +53,7 @@ const HomePage = () => {
           
         </div>
         <div className="d-flex align-items-center gap-lg-5 justify-content-between justify-content-lg-start" >
-              <img src={profile} alt="" />
+              <img src={profile} alt="" className="w-25 img-fluid rounded-5" style={{maxWidth:"4rem", height:"4rem"}}/>
               <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
                 <div className="email  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={mail} alt="" />

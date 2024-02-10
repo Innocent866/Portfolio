@@ -46,7 +46,7 @@ ol .img3{
     animation: imag3 3s 1s infinite linear alternate;
 }
 ol .img4{
-    animation: ima4 3s 3s infinite linear alternate;
+    animation: ima4 2s 3s infinite linear alternate;
 }
 
 @keyframes images1 {
