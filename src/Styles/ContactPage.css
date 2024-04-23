@@ -1,11 +1,11 @@
-.ContactPage h1{
+.ContactPage h1 {
     font-size: 56px;
     font-family: 'Hammersmith One', sans-serif;
 }
 
 
 
-.ContactPage h3{
+.ContactPage h3 {
     background-color: #FFFFFF;
     color: #F16529;
     font-family: 'Hammersmith One', sans-serif;
@@ -15,7 +15,7 @@
 }
 
 
-.ContactPage h5{
+.ContactPage h5 {
     font-size: 30px;
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -23,12 +23,33 @@
 
 
 @media screen and (min-width: 890px) {
-    .ContactPage{
+    .ContactPage {
         margin: 0 2rem 0 6rem;
     }
 
-    div .div{
+    div .div {
         width: 40rem;
-        
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ContactPage {
+        margin: 0 2rem 0 6rem;
+    }
+
+    div .div {
+        width: 40rem;
+
+    }
+
+    .general-contact-2 {
+        position: fixed;
+        width: 50%;
+    }
+
+    .general-contact-3 {
+        position: absolute;
+        right: 0;
     }
 }

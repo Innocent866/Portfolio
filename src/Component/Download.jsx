@@ -25,13 +25,11 @@ const Download = () => {
           <img src={CloseModal} alt=""/>
           </div>
           <img src={Downloadlogo} alt="" />
-          <Link style={{color:"#F16529"}}><p className="mt-2">Mubarak's Resume.pdf</p></Link>
+          <a href="" download="C:\Users\User\Documents\Innocent CV PDF.pdf" style={{color:"#F16529"}}><p className="mt-2">Innocent's Resume.pdf</p></a>
           <h1>Download In Progress!</h1>
           <p style={{color:"#B5B5B5"}}>Kindly check your downloads for the downloaded file.</p>
 
-          <button className="w-50 border-0 mb-5 rounded p-1" onClick={handleClose}>
-        Go to Downloads
-        </button>
+          
           </Modal.Body>
         
           

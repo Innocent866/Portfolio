@@ -3,18 +3,6 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
-
-@media screen and (min-width: 890px) {
-    .ProjectPage{
-        margin: 0 2rem 0 6rem;
-    }
-
-    div .div{
-        width: 40rem;
-        
-    }
-}
-
 .li {
     background-color: white;
     color: black;
@@ -27,3 +15,25 @@
 }
 
 
+@media screen and (min-width: 890px) {
+    .ProjectPage{
+        margin: 0 2rem 0 6rem;
+    }
+
+    div .div{
+        width: 40rem;
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   .general-project-2{
+    position: fixed; 
+    width: 50%;
+   }
+
+   .general-project-3{
+    position: absolute;
+    right: 0;
+   }
+}
