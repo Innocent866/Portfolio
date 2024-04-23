@@ -42,7 +42,7 @@ const ContactInput = () => {
 
   return (
     <div
-      style={{ background: "#2D2D2D", height: "100%" }}
+      style={{ background: "#2D2D2D", height: "100vh" }}
       className="div container p-5 text-white"
     >
       <h1>SEND A MESSAGE</h1>
