@@ -24,7 +24,7 @@ const ContactPage = () => {
             </Link>
 
             <h3 className="d-inline px-4 py-1">Full Stack Developer</h3>
-            <h1>Innocent Goldima</h1>
+            <h1 className="mt-3">Goldima Innocent</h1>
             <p className="lh-base">
               Knowledgeable developer with proven success designing web pages <br />
               that enhance functionality, Strong HTML and CSS programmer.

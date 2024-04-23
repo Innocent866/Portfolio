@@ -22,7 +22,7 @@ const HomePage = () => {
         <div className="d-lg-flex justify-content-between  align-items-center">
           <div className="Landing-Page">
             <h5>Full Stack Developer</h5>
-            <h1 className="mt-5 mt-lg-3" style={{fontFamily:'Hammersmith One'}}>Innocent Goldima</h1>
+            <h1 className="mt-5 mt-lg-3" style={{fontFamily:'Hammersmith One'}}>Goldima Innocent</h1>
             <p className="lh-base" style={{fontSize:"18px"}}>
              <strong className="fs-1">About :</strong> My name is INNOCENT GOLDIMA DAKUP am from NIGERIA, PLATEAU STATE, I am a WEBSITE DEVELOPER FULLSTACK but Specialized on FRONTEND DEVELOPER. You can preview my passed project by clicking on the project button and contact me by also clicking on the Contact button
             </p>

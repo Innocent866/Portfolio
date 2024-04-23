@@ -19,7 +19,7 @@ const ProjectPage = () => {
               <h2 className="mb-5">INNOCENT.</h2>
             </Link>
             <h3 className="d-inline px-4 py-1" style={{color: "#F16529",backgroundColor:"#FFFFFF", fontFamily: 'Hammersmith One', fontSize:"18px"}}>Full Stack Developer</h3>
-            <h1 style={{fontFamily: 'Hammersmith One', fontSize:"56px"}}>Innocent Goldima</h1>
+            <h1 className="mt-3" style={{fontFamily: 'Hammersmith One', fontSize:"56px"}}>Goldima Innocent</h1>
             <p className="lh-base" >
             Knowledgeable developer with proven success designing web pages <br /> that enhance functionality, Strong HTML and CSS programmer.
             </p>
