@@ -44,7 +44,7 @@ const ContactPage = () => {
                 />{" "}
                 <p className="li "> Projects</p>
               </Link>
-              <Link to="" className="text-decoration-none text-white">
+              
                 <p className="d-flex gap-3">
                   02{" "}
                   <img
@@ -54,7 +54,7 @@ const ContactPage = () => {
                   />{" "}
                   <Download />{" "}
                 </p>
-              </Link>
+              
               <Link
                 to="/contact"
                 className="d-flex gap-3 text-decoration-none text-white"
@@ -78,7 +78,7 @@ const ContactPage = () => {
                 style={{ maxWidth: "4rem", height: "4rem" }}
               />
               <Link
-              to="https://mail.google.com/mail/igoldima@gmail.com"
+              to="mailto:igoldima@gmail.com"
                 target="blank"
                 className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3"
               >

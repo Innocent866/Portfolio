@@ -54,7 +54,7 @@ const HomePage = () => {
         </div>
         <div className="d-flex align-items-center gap-lg-5 justify-content-between justify-content-lg-start" >
               <img src={profile} alt="" className="w-25 img-fluid rounded-5" style={{maxWidth:"4rem", height:"4rem"}}/>
-              <Link target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
+              <Link to="mailto:igoldima@gmail.com" target="blank" className="text-white text-decoration-none d-flex align-items-center gap-1 gap-lg-3">
                 <div className="email  d-flex align-items-center gap-1 gap-lg-3">
                 <img src={mail} alt="" />
                 Email Me

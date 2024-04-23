@@ -1,59 +1,68 @@
-import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
 import "../Styles/Contactnput.css";
+import LazyLoad from 'react-lazyload';
 import toast from 'react-hot-toast';
-
+import axios from "axios";
 
 const ContactInput = () => {
-  
-  const form = useRef();
+  const [from, setFrom] = useState("");
+  const [subject, setSubject] = useState("");
+  const [writeMessage, setWriteMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    if (!from || !subject || !writeMessage) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    const bodyprops = { from, subject, writeMessage };
+    try {
+      const response = await axios.post("https://portfolio-2slt.onrender.com/api/create", bodyprops);
+      console.log(response.data);
+      toast.success("Message sent successfully!");
+      // Clear form inputs after successful submission
+      setFrom("");
+      setSubject("");
+      setWriteMessage("");
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast.error("Failed to send message. Please try again later.");
+    }
   };
 
-
   return (
-    <div
-      style={{ background: "#2D2D2D", height:"100vh" }}
-      className="div container p-5 text-white"
-    >
+    <div style={{ background: "#2D2D2D", height: "100vh" }} className="div container p-5 text-white">
       <h1>SEND A MESSAGE</h1>
-      <form action="" ref={form} onSubmit={sendEmail}>
+      <form action="" onSubmit={sendEmail}>
         <input
           type="text"
-          name="user_name"
           placeholder="From"
-          style={{ background: "#404040", color:"white"}}
+          style={{ background: "#404040", color: "white" }}
           className="w-100 my-4 p-2"
+          value={from}
+          onChange={(e) => setFrom(e.target.value)}
         />
 
         <input
           type="text"
-          name="user_subject"
           placeholder="Subject"
-          style={{ background: "#404040", color:"white" }}
+          style={{ background: "#404040", color: "white" }}
           className="w-100 my-4 p-2"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
         />
 
         <textarea
           className="w-100 my-4 p-2"
-          style={{ background: "#404040", height: "20rem", color:"white" }}
-          name="message"
+          style={{ background: "#404040", height: "20rem", color: "white" }}
           placeholder="Write Message..."
-          >
-          
-        </textarea>
+          value={writeMessage}
+          onChange={(e) => setWriteMessage(e.target.value)}
+        ></textarea>
 
         <div className="text-center">
-          <button className="btn btn-light px-5" >Send Message</button>
+          <button className="btn btn-light px-5">Send Message</button>
         </div>
       </form>
     </div>

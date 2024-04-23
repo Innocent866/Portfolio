@@ -36,18 +36,15 @@ const ProjectPage = () => {
                  <p className="li "> Projects</p>
                 
               </Link>
-              <Link to="" className="d-flex gap-3 text-decoration-none text-white">
-                
+              <p className="d-flex gap-3">
                   02{" "}
                   <img
                     src={Dash}
                     alt=""
-                    className="dash"
                     style={{ fontSize: "2rem", fontWeight: "10px" }}
-                  />
-                  <Download />
-                
-              </Link>
+                  />{" "}
+                  <Download />{" "}
+                </p>
               <Link to="/contact" className="d-flex gap-3 text-decoration-none text-white">
                 
                   03{" "}
