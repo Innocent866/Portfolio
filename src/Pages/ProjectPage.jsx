@@ -44,8 +44,8 @@ const ProjectPage = () => {
                     alt=""
                     className="dash"
                     style={{ fontSize: "2rem", fontWeight: "10px" }}
-                  />{" "}
-                  <Download />{" "}
+                  />
+                  <Download />
                 
               </Link>
               <Link to="/contact" className="d-flex gap-3 text-decoration-none text-white">

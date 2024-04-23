@@ -1,76 +1,55 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "../Styles/Contactnput.css";
-import axios from 'axios'
 import toast from 'react-hot-toast';
 
 
 const ContactInput = () => {
-  const [subject, setSubject] = useState("");
-  const [from, setFrom] = useState("");
-  const [writeMessage, setWriteMessage] = useState("");
+  
+  const form = useRef();
 
-  const handleSubmit = async (e)=>{
-    e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    // const messageBody = 
-
-    
-    try {
-      const data = await axios.post('https://portfolio-2slt.onrender.com/api/create',{
-        from,
-        subject,
-        writeMessage
-      })
-     if (data.data.success === true) {
-      toast.success(data.data.message)
-     }
-
-     if (data.response.data.success === false) {
-      toast.error(data.response.data.message)
-     }
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-      if (error.response.data.success === false) {
-        toast.error(error.response.data.message)
-       }
-      
-    }
-  }
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
 
   return (
     <div
-      style={{ background: "#2D2D2D" }}
+      style={{ background: "#2D2D2D", height:"100vh" }}
       className="div container p-5 text-white"
     >
       <h1>SEND A MESSAGE</h1>
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" ref={form} onSubmit={sendEmail}>
         <input
           type="text"
+          name="user_name"
           placeholder="From"
           style={{ background: "#404040", color:"white"}}
           className="w-100 my-4 p-2"
-          value={from}
-          onChange={(e)=>setFrom(e.target.value)}
         />
 
         <input
           type="text"
+          name="user_email"
           placeholder="Subject"
           style={{ background: "#404040", color:"white" }}
           className="w-100 my-4 p-2"
-          value={subject}
-          onChange={(e)=>setSubject(e.target.value)}
         />
 
         <textarea
           className="w-100 my-4 p-2"
           style={{ background: "#404040", height: "20rem", color:"white" }}
-          value={writeMessage}
-          onChange={(e)=>setWriteMessage(e.target.value)}
-        >
-          Write Message...
+          name="message"
+          placeholder="Write Message..."
+          >
+          
         </textarea>
 
         <div className="text-center">
