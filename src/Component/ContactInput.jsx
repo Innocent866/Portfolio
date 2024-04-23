@@ -1,13 +1,15 @@
 import React, { useRef, useState } from "react";
+import Spinner from 'react-bootstrap/Spinner';
 import "../Styles/Contactnput.css";
-import LazyLoad from 'react-lazyload';
-import toast from 'react-hot-toast';
+import LazyLoad from "react-lazyload";
+import toast from "react-hot-toast";
 import axios from "axios";
 
 const ContactInput = () => {
   const [from, setFrom] = useState("");
   const [subject, setSubject] = useState("");
   const [writeMessage, setWriteMessage] = useState("");
+  const [isload, setIsload] = useState(false)
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -18,7 +20,11 @@ const ContactInput = () => {
 
     const bodyprops = { from, subject, writeMessage };
     try {
-      const response = await axios.post("https://portfolio-2slt.onrender.com/api/create", bodyprops);
+      setIsload(true)
+      const response = await axios.post(
+        "https://portfolio-2slt.onrender.com/api/create",
+        bodyprops
+      );
       console.log(response.data);
       toast.success("Message sent successfully!");
       // Clear form inputs after successful submission
@@ -26,13 +32,19 @@ const ContactInput = () => {
       setSubject("");
       setWriteMessage("");
     } catch (error) {
+      setIsload(true)
       console.error("Error sending message:", error);
       toast.error("Failed to send message. Please try again later.");
+    }finally{
+      setIsload(false)
     }
   };
 
   return (
-    <div style={{ background: "#2D2D2D", height: "100%" }} className="div container p-5 text-white">
+    <div
+      style={{ background: "#2D2D2D", height: "100%" }}
+      className="div container p-5 text-white"
+    >
       <h1>SEND A MESSAGE</h1>
       <form action="" onSubmit={sendEmail}>
         <input
@@ -61,8 +73,8 @@ const ContactInput = () => {
           onChange={(e) => setWriteMessage(e.target.value)}
         ></textarea>
 
-        <div className="text-center">
-          <button className="btn btn-light px-5">Send Message</button>
+        <div className="d-flex justify-content-center align-items-center">
+          <button className="btn btn-light px-5 d-flex justify-content-center align-items-center gap-4"> {isload && <Spinner animation="border" />} Send Message</button>
         </div>
       </form>
     </div>
