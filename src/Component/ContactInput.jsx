@@ -37,7 +37,7 @@ const ContactInput = () => {
 
         <input
           type="text"
-          name="user_email"
+          name="user_subject"
           placeholder="Subject"
           style={{ background: "#404040", color:"white" }}
           className="w-100 my-4 p-2"
