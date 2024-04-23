@@ -57,7 +57,7 @@ const ContactPage = () => {
               
               <Link
                 to="/contact"
-                className="d-flex gap-3 text-decoration-none text-white"
+                className="d-flex align-items-center gap-3 text-decoration-none text-white"
               >
                 03{" "}
                 <img

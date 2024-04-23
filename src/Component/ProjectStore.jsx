@@ -80,7 +80,7 @@ const ProjectStore = () => {
           <div className='p-2 m-2 me-lg-5' style={{background: "#404040"}}>
             <p>React</p>
             <h2 >Postit</h2>
-            <h2 >ongoing</h2>
+            <h2 className='text-danger'>ongoing</h2>
             <div className='d-flex'>
             <Link to="https://github.com/Innocent866/PostIt" target="blank" className='text-decoration-none text-white'>
             <div className="pad p-2 d-flex gap-1 align-items-center">
