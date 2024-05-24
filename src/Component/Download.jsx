@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Downloadlogo from '../assets/downloadlogo.svg'
 import CloseModal from '../assets/closemodallogo.svg'
 import Button from "react-bootstrap/Button";
+import Image from "./Innocent CV PDF.pdf"
 import { Link } from 'react-router-dom'
 import Modal from "react-bootstrap/Modal";
 
@@ -25,7 +26,7 @@ const Download = () => {
           <img src={CloseModal} alt=""/>
           </div>
           <img src={Downloadlogo} alt="" />
-          <a href="" download="C:\Users\User\Documents\Innocent CV PDF.pdf" style={{color:"#F16529"}}><p className="mt-2">Innocent's Resume.pdf</p></a>
+          <a href="" download={Image} style={{color:"#F16529"}}><p className="mt-2">Innocent's Resume.pdf</p></a>
           <h1>Download In Progress!</h1>
           <p style={{color:"#B5B5B5"}}>Kindly check your downloads for the downloaded file.</p>
 
