@@ -49,7 +49,7 @@ const ContactInput = () => {
       <form action="" onSubmit={sendEmail}>
         <input
           type="text"
-          placeholder="From"
+          placeholder="email"
           style={{ background: "#404040", color: "white" }}
           className="w-100 my-4 p-2"
           value={from}
